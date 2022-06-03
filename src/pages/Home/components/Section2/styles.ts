@@ -75,7 +75,11 @@ export const Content = styled.div`
   }
 `;
 
-export const Card = styled.div`
+interface ICardProps {
+  left: boolean;
+}
+
+export const Card = styled.div<ICardProps>`
   display: flex;
   flex-direction: ${(props) => (props.left ? 'row' : 'row-reverse')};
   justify-content: flex-start;

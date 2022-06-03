@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { backgroundHome } from '@/assets';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   & main {
