@@ -10,7 +10,7 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
 
-  background-color: #ffffff;
+  background-color: #ecfffd;
 
   z-index: 3;
 
