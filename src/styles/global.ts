@@ -2,6 +2,18 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
+  :root {
+    --primary-color-1: #11757a;
+    --primary-color-2: #052324;
+
+    --white-color-1: #f2f2f2;
+    --white-color-2: #e5e5e5;
+
+    --gray-color-1: #848991;
+  }
+
+
+
   * {
     margin: 0;
     padding: 0;
@@ -12,20 +24,24 @@ export default createGlobalStyle`
   html {
     scroll-behavior: smooth;
 
-    @media (max-width: 1360px) {
-      font-size: 93.75%;
+    @media screen and (max-width: 600px) {
+      font-size: 67.75%;
     }
 
-    @media (max-width: 1080px) {
-      font-size: 87.25%;
+    @media screen and (min-width: 600px) {
+      font-size: 74.25%;
     }
 
-    @media (max-width: 720px) {
+    @media screen and (min-width: 768px) {
       font-size: 80.75%;
     }
 
-    @media (max-width: 450px) {
-      font-size: 74.25%;
+    @media screen and (min-width: 992px) {
+      font-size: 87.25%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 93.75%;
     }
   }
 

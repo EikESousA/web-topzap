@@ -13,7 +13,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  background-color: #11757a;
+  background-color: var(--primary-color-1);
 
   z-index: 6;
 
@@ -24,7 +24,7 @@ export const Container = styled.header`
 `;
 
 export const NavigatorDesktop = styled.nav`
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 767px) {
     display: none;
   }
 
@@ -39,7 +39,7 @@ export const NavigatorDesktop = styled.nav`
 
     padding: 0.5rem;
 
-    color: #e9f6ff;
+    color: var(--white-color-2);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -51,11 +51,11 @@ export const NavigatorDesktop = styled.nav`
     padding: 0.8rem 3rem;
 
     border-radius: 2rem;
-    border-color: #ffffff;
+    border-color: var(--white-color-1);
 
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
 
-    color: #11807f;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -65,7 +65,7 @@ export const NavigatorDesktop = styled.nav`
   }
 
   & ul li a.login:hover {
-    background-color: #e5e5e5;
+    background-color: var(--white-color-2);
   }
 
   & ul li a.link::after {
@@ -78,7 +78,7 @@ export const NavigatorDesktop = styled.nav`
     height: 2px;
     width: 100%;
 
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
@@ -95,7 +95,7 @@ export const NavigatorDesktop = styled.nav`
 `;
 
 export const NavigatorMobile = styled.nav`
-  @media only screen and (min-width: 961px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 
@@ -114,7 +114,7 @@ export const NavigatorMobile = styled.nav`
     width: 28px;
     height: 2px;
     border-radius: 9999px;
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
 
     transition: all 0.4s ease-in-out;
   }
@@ -149,11 +149,11 @@ export const NavigatorMobile = styled.nav`
     padding: 0.8rem 3rem;
 
     border-radius: 2rem;
-    border-color: #ffffff;
+    border-color: var(--white-color-1);
 
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
 
-    color: #11807f;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -173,7 +173,7 @@ const appearFromTop = keyframes`
 `;
 
 export const NavigatorOpen = styled.nav`
-  @media only screen and (min-width: 961px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 
@@ -188,7 +188,7 @@ export const NavigatorOpen = styled.nav`
   justify-content: center;
   align-items: center;
 
-  background-color: #ffffff;
+  background-color: var(--white-color-1);
 
   animation: ${appearFromTop} 1s;
 
@@ -207,7 +207,7 @@ export const NavigatorOpen = styled.nav`
 
     padding: 0.5rem;
 
-    color: #11757a;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -224,7 +224,7 @@ export const NavigatorOpen = styled.nav`
     height: 2px;
     width: 100%;
 
-    background-color: #11757a;
+    background-color: var(--primary-color-1);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;

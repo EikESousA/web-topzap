@@ -67,8 +67,8 @@ export default function Section2() {
 
         <img src={exampleHome} alt="Exemplo do TopZap" />
 
-        <section>
-          <Fade right cascade>
+        <Fade right cascade>
+          <section>
             <Card left={false}>
               <div className="info">
                 <p>Transferência de atendimento</p>
@@ -107,8 +107,8 @@ export default function Section2() {
                 <RiDashboard2Line />
               </div>
             </Card>
-          </Fade>
-        </section>
+          </section>
+        </Fade>
       </Content>
     </Container>
   );

@@ -10,14 +10,14 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
 
-  background-color: #ecfffd;
+  background-color: var(--white-color-2);
 
   z-index: 3;
 
   & > p {
     margin-bottom: 2rem;
 
-    color: #11757a;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 2.5rem;
@@ -27,7 +27,7 @@ export const Container = styled.section`
   & > span {
     width: 70%;
 
-    color: #848991;
+    color: var(--gray-color-1);
 
     font-weight: 600;
     font-style: normal;
@@ -61,7 +61,7 @@ export const Content = styled.div`
     margin: 0 4rem;
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 767px) {
     width: 70%;
 
     flex-direction: column;
@@ -87,24 +87,26 @@ export const Card = styled.div<ICardProps>`
 
   transition: opacity 0.6s ease-out;
 
+  & div.info {
+    flex: 1;
+  }
+
   & div.info p {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.2rem;
 
     letter-spacing: -0.01px;
-    line-height: 26px;
 
     color: #313233;
   }
 
   & div.info span {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1rem;
 
     letter-spacing: 0;
-    line-height: 28px;
 
-    color: #848991;
+    color: var(--gray-color-1);
   }
 
   & div.img {
@@ -127,14 +129,14 @@ export const Card = styled.div<ICardProps>`
     min-width: 2rem;
     max-width: 2rem;
 
-    color: #ffffff;
+    color: var(--white-color-1);
   }
 
   & + div {
     margin-top: 2rem;
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 767px) {
     flex-direction: row-reverse;
 
     & div.img {

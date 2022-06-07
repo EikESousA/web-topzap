@@ -21,7 +21,7 @@ export const Container = styled.section`
     font-weight: 900;
     line-height: 6rem;
     letter-spacing: 0.1rem;
-    color: #ffffff;
+    color: var(--white-color-1);
 
     text-align: center;
   }
@@ -33,7 +33,7 @@ export const Container = styled.section`
     font-weight: 700;
     line-height: 2rem;
 
-    color: #ffffff;
+    color: var(--white-color-1);
 
     text-align: center;
   }
@@ -47,11 +47,11 @@ export const Container = styled.section`
     padding: 0.8rem 3rem;
 
     border-radius: 2rem;
-    border-color: #ffffff;
+    border-color: var(--white-color-1);
 
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
 
-    color: #11807f;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -61,6 +61,6 @@ export const Container = styled.section`
   }
 
   & div button:hover {
-    background-color: #e5e5e5;
+    background-color: var(--white-color-2);
   }
 `;

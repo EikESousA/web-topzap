@@ -1,3 +1,4 @@
+import { background2Home } from '@/assets';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -11,22 +12,21 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
 
-  background-image: url(http://brandexponents.com/exponent-lite/it-company/wp-content/uploads/sites/30/2019/06/intro-bg.svg);
+  background-image: url(${background2Home});
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: top right;
   background-position-x: right;
   background-position-y: top;
   background-size: contain;
-  background-color: #11807f;
+  background-color: var(--primary-color-1);
 
   z-index: 3;
 
   & p {
-    color: #ffffff;
+    color: var(--white-color-1);
 
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2rem;
     font-weight: 500;
   }
 
@@ -35,11 +35,11 @@ export const Container = styled.section`
     padding: 0.8rem 3rem;
 
     border-radius: 2rem;
-    border-color: #ffffff;
+    border-color: var(--white-color-1);
 
-    background-color: #ffffff;
+    background-color: var(--white-color-1);
 
-    color: #11807f;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;
@@ -51,6 +51,6 @@ export const Container = styled.section`
   }
 
   & button:hover {
-    background-color: #e5e5e5;
+    background-color: var(--white-color-2);
   }
 `;

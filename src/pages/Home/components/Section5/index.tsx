@@ -1,3 +1,4 @@
+import { client1Home, client2Home, client3Home, client4Home } from '@/assets';
 import { Scroll } from '@/pages/Home/components';
 import React from 'react';
 
@@ -8,13 +9,13 @@ export default function Section5() {
     <Container>
       <Scroll id="section5" />
 
-      <h2>Quem já usa o TopZap</h2>
+      <p>Quem já usa o TopZap</p>
 
       <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={client1Home} alt="" />
+        <img src={client2Home} alt="" />
+        <img src={client3Home} alt="" />
+        <img src={client4Home} alt="" />
       </div>
     </Container>
   );
