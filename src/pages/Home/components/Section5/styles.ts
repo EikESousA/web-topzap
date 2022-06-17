@@ -32,22 +32,35 @@ export const Container = styled.section`
     font-weight: 700;
   }
 
-  & div {
+  & section {
     margin-top: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  & div img {
+  & section div {
     height: 10rem;
     width: 15rem;
 
-    padding: 2rem;
-
-    background-color: var(--white-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 0.5rem;
+
+    background-color: var(--white-color-3);
   }
 
-  & div img + img {
+  & section div img {
+    max-height: 10rem;
+    max-width: 15rem;
+
+    padding: 2rem;
+  }
+
+  & section div + div {
     margin-left: 1rem;
   }
 `;

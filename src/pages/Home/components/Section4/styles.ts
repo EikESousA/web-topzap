@@ -155,7 +155,7 @@ export const Content = styled.div`
 
     background-color: var(--white-color-1);
 
-    color: #11807f;
+    color: var(--primary-color-1);
 
     font-family: 'Baloo 2', cursive;
     font-size: 1.1rem;

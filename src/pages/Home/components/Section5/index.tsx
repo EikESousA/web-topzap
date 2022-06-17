@@ -11,12 +11,20 @@ export default function Section5() {
 
       <p>Quem já usa o TopZap</p>
 
-      <div>
-        <img src={client1Home} alt="" />
-        <img src={client2Home} alt="" />
-        <img src={client3Home} alt="" />
-        <img src={client4Home} alt="" />
-      </div>
+      <section>
+        <div>
+          <img src={client1Home} alt="Logo Sivirino" />
+        </div>
+        <div>
+          <img src={client2Home} alt="Logo Zellos" />
+        </div>
+        <div>
+          <img src={client3Home} alt="Logo Renovação" />
+        </div>
+        <div>
+          <img src={client4Home} alt="Logo Inforeis" />
+        </div>
+      </section>
     </Container>
   );
 }
